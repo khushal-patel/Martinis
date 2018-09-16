@@ -1,0 +1,535 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+body::-webkit-scrollbar{
+    width: 6px;
+}
+body::-webkit-scrollbar-thumb{
+    background-color: #222;
+}
+#back{
+    width: 100%;
+    height: 100%;
+    background-image: url(back.jpg);
+    background-size: cover;
+}
+#overlay{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+}
+#nav{
+    width: 100%;
+    height: 100px;
+    /* background-color: #fff; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30px;
+    color: #fff;
+}
+#one{
+    font-size: 30px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+#two{
+    display: flex;
+    justify-content: space-evenly;
+    width: 150px;
+    color: rgba(255, 255, 255, 0.658);
+    /* background-color: rebeccapurple; */
+    font-size: 22px;
+}
+#navbar{
+    transition: all ease-in-out 0.2s;
+}
+#navbar:hover{
+    cursor: pointer;
+    color: #fff;
+    transform: scale(1.03);
+}
+#box{
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 60%;
+    height: 180px;
+    /* background-color: red; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+#box input[type="text"]{
+    display: block;
+    min-width: 70%;
+    padding: 10px 25px;
+    background-color: #ecf0f1;
+    border-radius: 100px;
+    border: none;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 20px;
+}
+#box button{
+    padding: 10px 55px;
+    border: none;
+    border-radius: 100px;
+    background: rgba(255, 50, 50, 0.918);
+    color: #ecf0f1;
+    letter-spacing: 2px;
+    transition: all ease-in-out 0.2s;
+}
+#box button:hover{
+    cursor: pointer;
+}
+#box h1{
+    color: #fff;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 100;
+    font-size: 40px;
+}
+#down{
+    position: absolute;
+    bottom: 4%;
+    left: 50%;
+    transform: translate(-50%,0);
+    font-size: 25px;
+    color: #fff;
+    animation: down 1s ease-in-out infinite both;
+}
+section#firstsec{
+    width: 100%;
+    height: 60vh;
+}
+#path{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right bottom, #f1c40f, #ebdeac);
+    clip-path: polygon(100% 0, 90% 50%, 100% 100%, 0% 100%, 10% 50%, 0% 0%);
+}
+#content{
+    color: #222;
+    position: absolute;
+    margin: 40px 0;
+    left: 50%;
+    transform: translate(-50%,0);
+    width: 60%;
+    /* background-color: red; */
+    text-align: center;
+}
+#content h1{
+    font-size: 42px;
+    margin-bottom: 10px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 400;
+}
+#content p{
+    font-size: 19px;
+}
+#icons{
+    /* margin: 10px 0; */
+    width: 100%;
+    height: 200px;
+    /* border: 2px solid #444; */
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.icon{
+    width: 100px;
+    height: 100px;
+    border: 2px solid #222;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    color: #222;
+    transition: all ease-in-out 0.2s;
+}
+.icon:hover{
+    cursor: pointer;
+    color: #fff;
+    border-color: #fff;
+    transform: scale(1.03) rotate(-10deg);
+}
+#dots{
+    margin: 0 auto;
+    width: 15%;
+    height: 30px;
+    /* background-color: rebeccapurple; */
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.dot{
+    width: 12px;
+    height: 12px;
+    background-color: #222;
+    border-radius: 50%;
+    transition: all ease-in-out 0.2s;
+}
+.dot:hover{
+    background-color: #fff;
+    border: 0.5px solid #222;
+    cursor: pointer;
+}
+section#secondsec{
+    width: 100%;
+    height: 95vh;
+    background-image: url(alex-jones-3443-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+    /* clip-path: polygon(90% 0%, 100% 100%, 10% 100%, 0% 0%); */
+}
+#upar{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.849);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.row{
+    width: 85%;
+    height: 45%;
+    /* background-color: red; */
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+#left{
+    margin-right: 67px;
+}
+#right{
+    margin-left: 67px;
+}
+.card{
+    position: relative;
+    width: 30%;
+    height: 90%;
+    border-radius: 6px;
+    transition: all ease-in-out 0.2s;
+}
+.card:hover{
+    transform: scale(1.05);
+    cursor: pointer;
+}
+#first{
+    background-image: url(http://www.ndtv.com/cooks/images/kuttu.dosa.jpg);
+    background-size: cover;
+    background-position: center;
+}
+#second{
+    background-image: url(https://i0.wp.com/media.hungryforever.com/wp-content/uploads/2016/05/24150132/Chilli-Paneer-Gravy-Recipe1.jpg?ssl=1?w=356&strip=all&quality=80);
+    background-size: cover;
+    background-position: center;
+}
+#third{
+    background-image: url(http://sherebengal.com/wp-content/uploads/2017/09/Omlet-1pc.jpg);
+    background-size: cover;
+    background-position: center;
+}
+#fourth{
+    background-image: url(https://tmbidigitalassetsazure.blob.core.windows.net/secure/RMS/attachments/37/1200x1200/Orange-Juice-Spritzer_EXPS_HCA18_21889_B04_26_4b.jpg);
+    background-size: cover;
+    background-position: center;
+}
+#fifth{
+    background-image: url(https://www.completelydelicious.com/wp-content/uploads/2016/11/14705399475_b1eb570d05_o-1-300x300.jpg);
+    background-size: cover;
+    background-position: center;
+}
+#sixth{
+    background-image: url(http://www.theredheadbaker.com/wp-content/uploads/2017/03/birthday-cake-milkshake-4.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.dark{
+    position: absolute;
+    bottom: 0;
+    padding: 50px 0 0 20px;
+    color: #ecf0f1;
+    width: 100%;
+    height: 40%;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0), black);
+}
+.dark h1{
+    font-size: 25px;
+    font-family: 'Raleway', sans-serif;
+}
+.dark p{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 10px;
+}
+#thirdsec{
+    color: #cacdce;
+    width: 100%;
+    height: 30vh;
+    background: linear-gradient(to bottom, rgb(151, 147, 147), black);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+}
+.item{
+    width: 25%;
+    height: 85%;
+    background-color: rgb(75, 70, 70);
+    padding: 25px 30px 0 30px;
+    border-radius: 5px;
+}
+.item h1{
+    font-size: 28px;
+    color: #f1c40f;
+    font-family: 'Raleway', sans-serif;
+}
+hr{
+    width: 40%;
+}
+.item ul{
+    list-style: none;
+}
+.item li{
+    font-size: 14px;
+}
+.item p{
+    font-size: 12px;
+}
+#center{
+    text-align: center;
+    position: relative;
+}
+#center hr{
+    width: 100%;
+}
+#rightmost{
+    text-align: right;
+}
+#rightmost hr{
+    margin: 0 60%;
+}
+#iconss{
+    position: absolute;
+    width: 82%;
+    height: 35%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 32px;
+    color: #ecf0f1;
+}
+.boxes{
+    width: 60px;
+    height: 60px;
+    border: 2px solid #ecf0f1;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all ease-in-out .2s;
+}
+.boxes:hover{
+    background-color: #f1c40f;
+    color: #222;
+    cursor: pointer;
+}
+section#fourthsec{
+    height: 60px;
+    background-color: black;
+    text-align: right;
+    color: #ecf0f1;
+}
+#fourthsec p{
+    letter-spacing: 4px;
+    padding-right: 30px;
+    padding-top: 30px;
+}
+#fourthsec span{
+    color: red;
+
+}
+
+
+
+@media(max-width:600px){
+    #back{
+        background-image: url(back1.jpg);
+    }
+    #box h1{
+        font-size: 24px;
+        letter-spacing: 1px;
+    }
+    #box input{
+        width: 140%;
+        height:  30px;
+    }
+    #box input[type="text"]{
+        font-size: 14px;
+        text-align: center;
+    }
+    #box button{
+        opacity: 0.8;
+    }
+    #one{
+        font-size: 20px;
+    }
+    #two{
+        width: 80px;
+        font-size: 16px;
+        justify-content: space-between;
+    }
+    #down{
+        font-size: 18px;
+    }
+    #firstsec h1{
+        font-size: 24px;
+        font-weight: 500;
+        letter-spacing: 2px;
+        margin-bottom: 30px;
+    }
+    #firstsec p{
+        letter-spacing: 2px;
+        font-size: 14px;
+        margin-bottom: 30px;
+    }
+    #content{
+        width: 350px;
+        /* background-color: rebeccapurple; */
+    }
+    #icons{
+        height: 320px;
+        flex-direction: column;
+        /* background-color: rebeccapurple; */
+    }
+    section#firstsec{
+        height: 100vh;
+        clip-path: polygon(100% 0, 85% 50%, 100% 100%, 0% 100%, 15% 50%, 0% 0%);
+    }
+    .icon{
+        width: 60px;
+        height: 60px;
+        font-size: 26px;
+    }
+    #icons{
+        margin-bottom: 15px;
+    }
+    .dot{
+        width: 8px;
+        height: 8px;
+    }
+    section#secondsec{
+        height: 100vh;
+    }
+    #upar{
+        justify-content: space-evenly;
+        flex-direction: row;
+        
+    }
+    .row{
+        width: 500px;
+        height: 550px;
+        /* background-color: rebeccapurple; */
+        flex-direction: column;
+    }
+    #left{
+        margin-right: 15px;
+        margin-bottom: 80px;
+    }
+    #right{
+        margin-left: 5px;
+        margin-top: 80px;
+    }
+    .card{
+        width: 170px;
+        height: 150px;
+    }
+    .dark h1{
+        position: absolute;
+        top: 25%;
+        left: 5%;
+        font-size: 16px;
+    }
+    .dark p{
+        width: 160px;
+        position: absolute;
+        left: 5%;
+        top: 60%;
+        font-size: 8px;
+    }
+    section#thirdsec{
+        height: 60vh;
+        flex-direction: column;
+    }
+    .item{
+        width: 170px;
+        height: 110px;
+        padding: 10px 15px;
+    }
+    #leftmost{
+        margin-right: 220px;
+    }
+    #rightmost{
+        margin-left: 220px;
+    }
+    .item h1{
+        font-size: 18px;
+    }
+    .item p{
+        font-size: 8px;
+    }
+    .item li{
+        font-size: 12px;
+    }
+    .boxes{
+        width: 35px;
+        height: 35px;
+        font-size: 16px;
+        margin-bottom: 20px;
+    }
+    section#fourthsec{
+        height: 40px;
+        font-size: 12px;
+    }
+    #fourthsec p{
+        padding-top: 18px;
+        padding-right: 12px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@keyframes down{
+    0%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(10px);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
