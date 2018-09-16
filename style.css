@@ -147,8 +147,6 @@ section#firstsec{
     background: -webkit-linear-gradient(left top, #f1c40f, #ebdeac);
     background: -o-linear-gradient(left top, #f1c40f, #ebdeac);
     background: linear-gradient(to right bottom, #f1c40f, #ebdeac);
-    -webkit-clip-path: polygon(100% 0, 90% 50%, 100% 100%, 0% 100%, 10% 50%, 0% 0%);
-            clip-path: polygon(100% 0, 90% 50%, 100% 100%, 0% 100%, 10% 50%, 0% 0%);
 }
 #content{
     color: #222;
@@ -524,8 +522,7 @@ section#fourthsec{
     }
     section#firstsec{
         height: 100vh;
-        -webkit-clip-path: polygon(100% 0, 85% 50%, 100% 100%, 0% 100%, 15% 50%, 0% 0%);
-                clip-path: polygon(100% 0, 85% 50%, 100% 100%, 0% 100%, 15% 50%, 0% 0%);
+        clip-path: 0 0, 100% 0, 100% 100%, 0 100%;
     }
     .icon{
         width: 60px;
